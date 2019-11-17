@@ -1,0 +1,49 @@
+<html>
+
+<head>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+<div id="root">
+
+
+    
+    <li v-for="name in names" v-text="name"></li>
+    <input type="text" id="input"/>
+    <button id="button">Add</button>
+
+</div>
+</body>
+    
+    <script>
+        
+       
+    
+ var app = new Vue({
+  el: '#root',
+  data: {
+   
+    names:['nujoom','ashina','arshman'],
+  },
+     
+     mounted() {
+     
+          document.getElementById("button").addEventListener('click',()=>{
+      
+     
+      let name = document.getElementById("input").value;
+      
+      app.names.push(name);
+  })      
+     
+ }
+                   
+})
+        
+ 
+        
+    </script>
+
+</html>

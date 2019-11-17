@@ -1,0 +1,40 @@
+<html>
+
+<head>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+<div id="root">
+
+
+
+<label>Enter the name</label>
+<input type="text" v-model="message" />
+    
+    <p>Below is the text {{ message }}</p>
+    
+    
+    
+
+</div>
+</body>
+    
+    <script>
+        
+        let data="hello vue"
+    
+    new Vue({
+  el: '#root',
+  data: {
+    message: data,
+   
+  }
+})
+        
+        
+        
+    </script>
+
+</html>
